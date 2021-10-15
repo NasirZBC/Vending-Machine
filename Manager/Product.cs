@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Vending_Machine.Manager
+﻿namespace Vending_Machine.Manager.Products
 {
-    interface Product
+     class Product
     {
-        public int Price { get; set; }
+        public string Name { get; private set; }
+        public int Price { get; private set; }
 
-        public string Name { get; set; }
+        public Product(string name, int price)
+        {
+            this.Name = name;
+            this.Price = price;
+        }
+
+        
     }
 }
